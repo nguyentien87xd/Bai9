@@ -77,3 +77,14 @@ $("#check-puzzle-button").on("click", function() {
   checkPuzzle();
 });
 });
+
+
+
+
+
+let done = false;
+
+for (let i = 0; i < 3; i++) {
+  if (done) {    break;  }  for (let j = 0; j < 3; j++) {    if (i * j >= 4) {      done = true;      break;    }
+
+    console.log(i, j);  }}
